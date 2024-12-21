@@ -1,0 +1,104 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url("https://github.com/user-attachments/assets/c695b39c-9ca5-47a5-8384-a564bf29415f");
+    background-size: cover;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background: rgb(255, 241, 211);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 400px; /* Set a fixed width for the container */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Align items to the start */
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+.input-container {
+    display: flex; /* Use flexbox to arrange inputs in a row */
+    justify-content: center; /* Center the inputs */
+    margin-bottom: 10px; /* Add some space below the input container */
+}
+
+input[type="text"], input[type="date"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 5px; /* Add some space between inputs */
+    flex: 1; /* Allow inputs to grow */
+}
+
+button {
+    padding: 10px 15px;
+    border: none;
+    background-color: #e95a18;
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #e73d1f;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    flex-grow: 1; /* Allow the list to grow and take available space */
+    overflow-y: auto; /* Enable vertical scrolling if the list is too long */
+}
+
+li {
+    background: #e9ecef;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+li:hover{
+    background: #c5cee0;
+}
+
+li button {
+    background: #ec315a;
+    border: none;
+    color: white;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+li button:hover {
+    background: #cc1432;
+}
+
+#taskCount {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.quote {
+    margin-top: 20px;
+    font-style: italic;
+    color: #555;
+    height: auto; /* Allow height to adjust based on content */
+    overflow: hidden; /* Hide overflow text */
+    text-overflow: ellipsis; /* Add ellipsis for overflow text */
+    white-space: nowrap; /* Prevent text from wrapping */
+    opacity: 1; /* Initial opacity */
+    transition: opacity 0.5s ease; /* Transition effect for opacity */
+}
